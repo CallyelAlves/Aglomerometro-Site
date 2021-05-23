@@ -143,6 +143,7 @@ td{
 footer{
   height: 35%;
   padding: 1.5rem;
+/*   box-shadow: inset 0px 0px 4px 1px #F09905; */
   border: 2px solid #F09905;
   border-radius: 7rem 0 0 0;
   font-size: 1rem;
@@ -176,7 +177,6 @@ footer .copy{
     text-align: center;
   }
   .header{
-    width: 400px;
     height: auto;
   }
   .menu{
@@ -198,7 +198,7 @@ footer .copy{
   #menuClose{
     width: 40px;
     height: 40px;
-    margin-top: -54%;
+    margin-top: -59%;
     margin-left: 85%;
     visibility: hidden;
   }
@@ -212,26 +212,22 @@ footer .copy{
   main{
     display: block;
   }
-  .lista{
-    margin-left: 12%;
-  }
   .info{
     display: block;
-    margin-left: 12%;
+    margin-left: 10%;
     width: 80%;
   }
   .about{
-    margin-top: 170%;
+    margin-top: 155%;
     width: 80%;
-    margin-left: 15%;
+    margin-left: 10%;
   }
   .about p{
     text-align: justify;
   }
   footer{
-    width: 400px;
-    height: 50%;
-    margin-top: 70%;
+    height: 45%;
+    margin-top: 50%;
     padding: 0;
     text-align: center;
   }
@@ -247,8 +243,8 @@ footer .copy{
   }
   footer .copy{
     margin-left: 22.5%;
-    padding-top: 25%;
-    margin-top: 55%;
+    padding-top: 15%;
+    margin-top: 50%;
     font-weight: bold;
     text-align: center; 
   }
