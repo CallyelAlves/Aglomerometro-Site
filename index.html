@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Aglomerômetro</title>
+   <link rel="icon" href="src/icon.png">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="src/icon.png">
+        <h1>Aglomerômetro</h1>
+      </div>
+      <nav>
+        <ul class="menu">
+          <a href="#home" onclick="closeMenu()"><li>Home</li></a>
+          <a href="#sobre" onclick="closeMenu()"><li>Sobre</li></a>
+          <a href="#contato" onclick="closeMenu()"><li>Contato</li></a>
+        </ul>
+      </nav>
+      <img id="menuOpen" src="./src/icon-menu-open.png" alt="" onclick="openMunu()">
+      <img id="menuClose" src="./src/icon-menu-close.png" alt="" onclick="closeMenu()">
+    </header>
+
+    <main>
+      <section class="lista" id="home">
+        <table>
+          <tr>
+            <th>Estabelecimentos</th>
+          </tr>
+          
+          <tr>
+            <td onclick="abrir_tela(0);">SupermerCaju</td>
+          </tr>
+
+          <tr>
+            <td onclick="abrir_tela(1);">Nagy Confecções</td>
+          </tr>
+          
+          <tr>
+            <td onclick="abrir_tela(2);">Zé's Bar e Restaurante</td>
+          </tr>
+
+          <tr>
+            <td onclick="abrir_tela(3);">Churrascaria do Beto</td>
+          </tr>
+
+          <tr>
+            <td onclick="abrir_tela(4);">Caju's Mall</td>
+          </tr>
+
+        </table>
+      
+      </section>
+
+      <section class="informacoes">
+        <div class="info">
+          <h2>Informações</h2>
+          <p>
+            Este site proporciona o acompanhamento, em tempo real, do nível de aglomeração dos estabelecimentos 
+            que utilizam o sistema de gerenciamento da quantidade de pessoas em suas depêndencia: Aglomerômetro.
+          </p>
+              
+          <p>
+            Com esse sistema, as pessoas podem verificar a quantidade de pessoas presentes nos estabelecimentos e, 
+            assim, decidir a melhor hora de se deslocar ao estabelecimento, considerando o nível de aglomeração atual.
+          </p>
+        </div>
+      </section>  
+        
+      <div id="estabelecimento">
+        <h2 id="nome">Nome do estabelecimento</h2>
+        <p id="area"></p>
+        <p id="funcionarios"></p>
+        <p id="presentes"></p>
+        <p id="capacidade"></p>
+        <p id="situacao"></p>
+        <img id="bt" onclick="fechar_tela();" src="src/icon-sair.png">
+      </div>
+
+    </main>
+    <div class="about" id="sobre">
+      <h2>Sobre</h2>
+      <p>Sistema de gerenciamento de aglomeração de estabelecimentos: Aglomerômetro.</p>
+      <p>
+        Este sistema visa controlar a quantidade de pessoas no interior dos estabelecimentos
+        a fim de promover a segurança das pessoas, assegurando que possam manter o
+        distanciamento seguro.   
+      </p>
+      <p>
+        Por meio da leitura de sensores e câmeras de seguranças dispostos nas instalações dos 
+        estabelecimentos, o sistema de gerenciamento mantém o controle da quantidade de pessoas 
+        que entram e saem do estabelecimento. Classificando assim, os níveis de aglomeração de
+        acordo com a capacidade do estabelecimento.  
+      </p>
+    </div>
+    <footer id="contato">
+      <div class="equipe">
+        <h4>Desenvolvedores:</h4><br>
+        Callyel Nunes <br>
+        Jhônatan Izidro <br>
+        José Vinicius <br>
+        Weberton Fernandes
+      </div>
+      
+     <div class="email">
+       <h4>Email:</h4>
+      <a href="">aglomerometro.suporte@email.com</a>  
+     </div>
+      <div class="copy">
+        <p>&copy; Aglomerômetro 2021</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: #F2F2F2;
+}
+h1{
+  font-size: 24px;
+}
+h2{
+  text-align: center;
+}
+p{
+  text-align: justify;
+  margin-top: 5%;
+}
+.header{
+  overflow: hidden;
+  width: 100%;
+  height: 10%;
+  padding: 5% 0;
+  background: #F09905;
+  border-radius: 0 0 0 7rem;
+  font-size: 18px;
+}
+.menu{
+  list-style: none;
+  width: 30%;
+  float: right;
+  margin-right: 15%;
+}
+li{
+  float: left;
+  cursor: pointer;
+  color: white;
+  margin-left: 4rem;
+}
+.logo{
+  float: left;
+  width: 300px;
+  margin-left: 15%;
+  cursor: pointer;
+  color: white;
+}
+
+img{
+  float: left;
+  width: 12%;
+  padding-right: .75rem; 
+}
+
+main{
+  display: flex;
+  margin-top: 7%;
+}
+
+.lista{
+  margin-left: 15%;
+  margin-bottom: 10%;
+}
+
+table{
+  border: solid ;
+  border-radius: 7%;
+  padding: 2rem;
+}
+
+table tr th{
+  padding-bottom: 1rem;
+}
+
+th{
+  font-size: 18px;
+}
+
+table tr td:hover{
+  background: white;
+  border-radius: 5%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+td{
+  text-align: center;
+  padding: 1rem 0;
+  width: 200px;
+  cursor: pointer;
+}
+
+.info{
+  position: absolute;
+  float: right;
+  width: 45%;
+  height: 60%;
+  margin-left: 6%;
+}
+
+#estabelecimento{
+  visibility: hidden;
+  position: absolute;
+  border: solid;
+  background: white;
+  border-radius: 10%;
+  padding: 2rem;
+  width: 30%;
+  height: 70%;
+  top: 10%;
+  left: 35%;
+}
+
+#bt{
+  position: relative;
+  float: right;
+  width: 5%;
+  top: -75%;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+#nome{
+  margin-bottom: 15%;
+}
+
+.about{
+  display: block;
+  width: 70%;
+  height: 70%;
+  margin: 0 15%;
+}
+
+.about h2 {
+  font-size: 24px;
+}
+
+.about p{
+  text-align: center;
+}
+
+footer{
+  height: 35%;
+  padding: 1.5rem;
+  border: 2px solid #F09905;
+  border-radius: 7rem 0 0 0;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+footer .equipe{
+  margin-left: 20%;
+  float: left;
+}
+
+footer .email{
+  margin-right: 20%;
+  float: right;
+}
+
+footer .copy{
+  margin-left: 40%;
+  position: absolute;
+  margin-top: 15%;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 420px) {  
+  .logo{
+    margin-left: 2%;
+    float: none;
+    text-align: center;
+  }
+  .header{
+    width: 400px;
+    height: auto;
+  }
+  .menu{
+    margin-top: -100%;
+    margin-right: 42%;
+    visibility: hidden;
+  }
+  .mopen{
+    margin-top: -.1px;
+    visibility: visible;
+  }
+  #menuOpen{
+    visibility: visible;
+    width: 40px;
+    height: 40px;
+    margin-top: -10%;
+    margin-left: 84%;
+  }
+  #menuClose{
+    width: 40px;
+    height: 40px;
+    margin-top: -54%;
+    margin-left: 85%;
+    visibility: hidden;
+  }
+  li{
+    padding-bottom: 2rem;
+  }
+  img{
+    margin-left: 15%;
+    padding-right: 0;
+  }
+  main{
+    display: block;
+  }
+  .lista{
+    margin-left: 17%;
+  }
+  .info{
+    display: block;
+    margin-left: 15%;
+    width: 80%;
+  }
+  .about{
+    margin-top: 170%;
+    width: 80%;
+    margin-left: 15%;
+  }
+  .about p{
+    text-align: justify;
+  }
+  footer{
+    width: 400px;
+    height: 50%;
+    margin-top: 70%;
+    padding: 0;
+    text-align: center;
+  }
+  footer .equipe{
+    margin-left: 25%;
+    margin-top: 5%;
+    float: left;
+  }
+  footer .email{
+    margin-left: 10%;
+    margin-top: 5%;
+    float: left;
+  }
+  footer .copy{
+    margin-left: 22.5%;
+    padding-top: 25%;
+    margin-top: 55%;
+    font-weight: bold;
+    text-align: center; 
+  }
+  #estabelecimento{
+    border-radius: 15%;
+    background: white;
+    padding: 2rem;
+    width: 260px;
+    height: 400px;
+    left: 6.5%;
+    position: absolute;
+  }
+  #bt{
+    margin-top: -3rem;
+    width: 1.5rem;
+  }
+}
